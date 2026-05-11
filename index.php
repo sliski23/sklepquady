@@ -8,7 +8,7 @@
     <style>
         body { margin: 0; font-family: sans-serif; }
         nav { display: flex; justify-content: space-between; padding: 20px 50px; background: #fff; align-items: center; border-bottom: 1px solid #eee; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('quad-bg.jpg'); /* dodaj własne foto */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url('quad.jpg');
                 background-color: #555; height: 400px; display: flex; flex-direction: column; 
                 justify-content: center; align-items: center; color: white; text-align: center; }
         .btn { padding: 10px 25px; background: #000; color: #fff; text-decoration: none; border-radius: 4px; }

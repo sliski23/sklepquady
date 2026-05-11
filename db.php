@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$db_user = "root"; // Tu wpisz '01493838_marek' jeśli to Twój user na serwerze
+$db_user = "root"; 
 $db_password = ""; 
 $db_name = "sklep_quady";
 
