@@ -19,10 +19,20 @@
     <nav>
         <div class="logo"><strong>QuadsLuxe</strong></div>
         <div class="nav-links">
-            <a href="#">Produkty</a>
+            
+            <?php 
+            
+            if (isset($_SESSION['user_login']) && ($_SESSION['user_login'] == 'qqq' || (isset($_SESSION['user_rola']) && $_SESSION['user_rola'] == 'admin'))) {
+                echo '<a href="dashboard.php?page=produkty" style="color: black; font-weight: bold;">Produkty</a>';
+            } else {
+                echo '<a href="#">Produkty</a>';
+            }
+            ?>
+            
             <a href="#">Cennik</a>
+            
             <?php if(isset($_SESSION['user_login'])): ?>
-                <span>Witaj, <?= $_SESSION['user_login'] ?>!</span>
+                <span>Witaj, <?= htmlspecialchars($_SESSION['user_login']) ?>!</span>
                 <a href="logout.php" class="btn">Wyloguj</a>
             <?php else: ?>
                 <a href="login.php" class="btn">Logowanie</a>
