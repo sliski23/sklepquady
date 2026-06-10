@@ -21,6 +21,7 @@
         <div class="nav-links">
             
             <?php 
+<<<<<<< HEAD
             <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -958,6 +959,9 @@
 
 </body>
 </html>
+=======
+            
+>>>>>>> 86073a3f7e913126585a13a8ee98d0cd8ebc5b02
             if (isset($_SESSION['user_login']) && ($_SESSION['user_login'] == 'qqq' || (isset($_SESSION['user_rola']) && $_SESSION['user_rola'] == 'admin'))) {
                 echo '<a href="dashboard.php?page=produkty" style="color: black; font-weight: bold;">Produkty</a>';
             } else {
